@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio | Web Design Final Project</title>
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #34495e;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            background: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        img {
+            max-width: 150px;
+            border-radius: 50%;
+        }
+
+        ul {
+            list-style-type: square;
+        }
+
+        form {
+            max-width: 400px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1a252f;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Personal Portfolio</h1>
+    <p>Final Project – Web Design for Everybody</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome</h2>
+        <img src="ram.jpeg" alt="Profile photo of the website owner">
+        <h3>Hii! I AM RAMA CHANDRA SAHOO</h3>
+        <p>
+            Welcome to my personal portfolio website. This site is created as a
+            final project for the <strong>Web Design for Everybody</strong> specialization
+            by the University of Michigan.
+        </p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p><li>
+            I am a student learning web development. I am passionate about creating
+            accessible, user-friendly, and responsive websites using modern web
+            technologies.
+            </li>
+        </p>
+        <p><li>
+            This project demonstrates my understanding of HTML5, CSS3, accessibility,
+            and responsive design principles.
+        </li>    
+        </p>
+    </section>
+
+    <!-- Skills / Projects Section -->
+    <section id="skills">
+        <h2>Skills & Projects</h2>
+
+        <h3>Technical Skills</h3>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Responsive Web Design</li>
+            <li>Web Accessibility</li>
+        </ul>
+
+        <h3>Sample Projects</h3>
+        <ul>
+            <li>Personal Portfolio Website</li>
+            <li>Simple Responsive Web Page</li>
+            <li>Accessible Contact Form</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <p>
+            Email: <a href="mailto:example@email.com">example@email.com</a>
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 | Web Design Final Project</p>
+</footer>
+
+</body>
+</html>
